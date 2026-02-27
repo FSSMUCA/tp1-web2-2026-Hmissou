@@ -5,14 +5,20 @@
     <title>TP JavaScript</title>
   </head>
   <body>
-    <h1>Exercice X</h1>
-    <!-- Votre contenu HTML ici -->
+    <h1>Exercice 4</h1>
 
     <script>
         let prenom = window.prompt("Quel est votre prénom ?");
         let age = window.prompt("Quel est votre âge ?");
         age = Number(age);
-        anneeNaissance = 2025 - age
+        let anneeNaissance = 2025 - age;
+        window.alert(`bonjour ${prenom}!, Vous etre ne vers ${anneeNaissance}`);
+        let afficherConsole = window.confirm("Afficher dans la console ?");
+        if(afficherConsole === true){
+          console.log("Prénom :", prenom);
+          console.log("Age :", age);
+          console.log("Annee se naissance :", anneeNaissance);
+        }
     </script>
   </body>
 </html>
